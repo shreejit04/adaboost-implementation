@@ -14,43 +14,31 @@ This code implements an AdaBoost algorithm from scratch and compares its perform
 
 **Functions and Classes**
 
-1. get_error_rate(pred, Y)
-
-Description: Calculates the error rate between predicted and actual labels.
+1. get_error_rate(pred, Y): Calculates the error rate between predicted and actual labels.
 
 Input Parameters:
 
-pred: Predicted labels.
-
-Y: Actual labels.
+  pred: Predicted labels.
+  Y: Actual labels.
 
 Output:
 
-Error rate as a float.
+  Error rate as a float.
 
-2. my_adaboost(Y_train, X_train, Y_test, X_test, M, clf)
-
-Description: Implements the AdaBoost algorithm with decision trees as weak learners.
+2. my_adaboost(Y_train, X_train, Y_test, X_test, M, clf): Implements the AdaBoost algorithm with decision trees as weak learners.
 
 Input Parameters:
 
-Y_train: Training labels.
-
-X_train: Training features.
-
-Y_test: Test labels.
-
-X_test: Test features.
-
-M: Number of weak learners.
-
-clf: Weak learner (DecisionTreeClassifier or RandomForestClassifier).
+    Y_train: Training labels.
+    X_train: Training features.
+    Y_test: Test labels.
+    X_test: Test features.
+    M: Number of weak learners.
+    clf: Weak learner (DecisionTreeClassifier or RandomForestClassifier).
 
 Output: Tuple containing the error rates for training and testing.
 
-3. main()
-
-Description: The main section of the script that loads the digits dataset, performs data preprocessing, trains scikit-learn's AdaBoost, and compares it with the custom AdaBoost implementation on both synthetic and Kaggle datasets.
+main(): Description: The main section of the script that loads the digits dataset, performs data preprocessing, trains scikit-learn's AdaBoost, and compares it with the custom AdaBoost implementation on both synthetic and Kaggle datasets.
 
 **Usage**
 1.  Import necessary libraries and modules.
